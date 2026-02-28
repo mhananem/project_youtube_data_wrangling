@@ -3,7 +3,20 @@
 # PROJECT 1 | YouTube Dta Structuring and Wrangling
 <details>
   <summary>
-   <h2>Project Objectifs</h2>
+   <h2>Project Objectives</h2>
+  </summary>
+
+- Use Python methods to extract and combine data from two different sources.
+- Analyze the collected data to validate or reject the hypotheses formulated below.
+
+  <br>
+  <hr> 
+
+</details>
+
+<details>
+  <summary>
+   <h2>Hypotheses</h2>
   </summary>
 
 1. The average engagement rate of videos exceeds 4%.
@@ -23,10 +36,10 @@
 
 <details>
   <summary>
-   <h2>Context</h2>
+   <h2>Data sources</h2>
   </summary>
 
-Here is the data sources used for this project:
+The data sources used for this project:
 
 - YouTube data between 2020-2021 mostly using the data for the US and grouped by video_id and channel_id. Source: https://www.kaggle.com/datasets/jashwanthreddya/youtube?resource=download
 - YouTube API data fom YouTube API V3. Source: https://developers.google.com/youtube/v3/docs?hl=fr
@@ -37,7 +50,7 @@ Here is the data sources used for this project:
 
 </details>
 
-Description of the documents attached project:
+Description of the documents attached to the project:
 
 - Youtube_project_structuring_data.ipynb: the python code used for merging, structuring, and visualizing the data.
 - functions.py: contains the functions used in the project, mainly for extracting data from the API and performing data cleaning. The functions are stored in a .py file for future reuse.
@@ -50,9 +63,7 @@ Description of the documents attached project:
 
 </details>
 
-## Introduction
-
-Key metrics:
+## Key metrics
 
 - Engagement rate = likes + comments/ number of views
 - % Views = Views per channel/ Total Views * 100
