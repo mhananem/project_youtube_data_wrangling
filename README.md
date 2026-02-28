@@ -1,5 +1,8 @@
-![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
-![logo_ironhack_blue 7](https://logo-marque.com/wp-content/uploads/2020/04/YouTube-Logo.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png" width="200">
+  <img src="https://logo-marque.com/wp-content/uploads/2020/04/YouTube-Logo.png" width="200">
+</p>
+
 # PROJECT 1 | YouTube Dta Structuring and Wrangling
 <details>
   <summary>
