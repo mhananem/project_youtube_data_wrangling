@@ -60,6 +60,8 @@ Description of the documents attached to the project:
 - video_categories.csv: data by category of video retreived through the API and stored in a .csv file for future reuse.
 - channels_data.csv: data by video channel retreived through the API and stored in a .csv file for future reuse.
 
+ link to the presentation document : https://docs.google.com/presentation/d/1UkTDGk2koeg8aSj0KHy8cZFksXwdwWnhQVas0ml0QBk/edit?usp=sharing
+ 
  
   <br>
   <hr> 
