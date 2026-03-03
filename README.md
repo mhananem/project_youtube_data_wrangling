@@ -9,7 +9,7 @@
    <h2>Project Objectives</h2>
   </summary>
 
-- Use Python methods to extract and combine data from two different sources.
+- Use Python methods to extract and combine data from two different sources with YouTube data.
 - Analyze the collected data to validate or reject the hypotheses formulated below.
 
   <br>
@@ -23,13 +23,11 @@
   </summary>
 
 1. The average engagement rate of videos exceeds 4%.
-2. Top channels in terms of views receive the highest number of reactions (+25% compared to average channels).
+2. Top channels in terms of views receive the highest number of reactions.
 3. Some categories (e.g., Music/Sport) have a significantly higher number of views compared to other categories.
-- The ratio of dislikes to total reactions (likes + dislikes) is similar across categories.
-4. Channels with the highest number of subscribers have published the most videos (e.g., gaming channels).
-5. Engagement rate decreases overtime.
-- Compare the engagement rate of the top 5 videos based on the dataset date versus the API data as of today.
-
+- The ratio of dislikes to total reactions is similar across categories.
+4. Channels with the highest number of subscribers have published the most videos.
+5. Engagement rate decreases overtime (engagement rate of the top 5 videos based on the dataset date versus the API data as of today).
 
 
   <br>
@@ -44,8 +42,42 @@
 
 The data sources used for this project:
 
-- YouTube data between 2020-2021 mostly using the data for the US and grouped by video_id and channel_id. Source: https://www.kaggle.com/datasets/jashwanthreddya/youtube?resource=download
-- YouTube API data fom YouTube API V3. Source: https://developers.google.com/youtube/v3/docs?hl=fr
+1. YouTube stored data: 
+Data between 2020-2021 mostly using the data for the US and grouped by video_id and channel_id. 
+Source: https://www.kaggle.com/datasets/jashwanthreddya/youtube?resource=download
+
+2. YouTube API data:
+Data fom YouTube API V3. Source: https://developers.google.com/youtube/v3/docs?hl=en
+
+! Important note
+How to connect to YouTube API:
+
+✅ Step 1 — Create a Google Cloud Project
+1. Go to Google Cloud console: https://console.cloud.google.com/
+2. Click Create Project
+2. Give a name to your project
+3. Click Create
+
+✅ Step 2 — Enable YouTube Data API v3
+1. In the left menu → APIs & Services
+2. Click Library
+3. Search for YouTube Data API v3
+4. Click Enable
+
+✅ Step 3 — Create API Key
+1. Go to APIs & Services → Credentials
+2. Click Create Credentials
+3. Select API Key
+4. Copy your key (you’ll use it in Python)
+
+✅ Step 4 — Install Python Client
+pip install google-api-python-client
+
+✅ Step 5 — Connect in Python
+from googleapiclient.discovery import build
+API_KEY = "YOUR_API_KEY"
+youtube = build("youtube", "v3", developerKey=API_KEY)
+print("Connection successful!")
 
  
   <br>
@@ -59,9 +91,8 @@ Description of the documents attached to the project:
 - functions.py: contains the functions used in the project, mainly for extracting data from the API and performing data cleaning. The functions are stored in a .py file for future reuse.
 - video_categories.csv: data by category of video retreived through the API and stored in a .csv file for future reuse.
 - channels_data.csv: data by video channel retreived through the API and stored in a .csv file for future reuse.
+- top5_videos_api.csv: data for the top 5 videos (views, kikes, comments) retreived through the API and stored in a .csv file for future reuse.
 
- link to the presentation document : https://docs.google.com/presentation/d/1UkTDGk2koeg8aSj0KHy8cZFksXwdwWnhQVas0ml0QBk/edit?usp=sharing
- 
  
   <br>
   <hr> 
@@ -76,6 +107,7 @@ Description of the documents attached to the project:
 - % of Total Reactions = Reactions per category/ Total Reactions * 100 (for % of Total Reactions by channel)
 - % of Dislikes = Dislikes per category/ Reactions per category * 100 (for % of Dislikes by category)
 
+Link to the presentation with analysis and insights: https://docs.google.com/presentation/d/1UkTDGk2koeg8aSj0KHy8cZFksXwdwWnhQVas0ml0QBk/edit?usp=sharing
 
 
 ## Requirements
